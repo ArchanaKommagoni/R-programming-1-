@@ -1,0 +1,19 @@
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+
+myMean <- function(assignment2) {
+  return(sum(assignment2) / length(assignment2))
+}
+
+result <- myMean(assignment2)
+print(result)
+Explaination: This code computes the average (mean) of a list of numbers.
+The numbers are stored in a variable called assignment2, and they are grouped together using the c() function to create a collection that R can work with.
+Then, a function named myMean is created. A function is a set of instructions that can be used multiple times.
+The purpose of myMean is to find the mean of any group of numbers you provide.
+Within the function, sum() adds up all the numbers, and length() counts how many numbers there are. 
+Dividing the total by the count gives the average. The return() statement ensures the function gives back the result when it's called.
+To find the mean of assignment2, the function is called by writing myMean(assignment2).
+This sends the numbers from assignment2 into the function, which processes them and calculates the mean. 
+The result is displayed using the print() function, which shows the mean (19.25) in the console.
+
+
