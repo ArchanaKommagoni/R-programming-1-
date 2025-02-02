@@ -1,0 +1,21 @@
+Title: Examining the 2016 Presidential Polls: A Closer Look at ABC vs. CBS Outcomes First of all, We will explore the fascinating field of political polling in this blog article, with a particular emphasis on the data gathered from ABC and CBS sources during the 2016 presidential election. 
+It is vital to remember that the data displayed here is completely fictitious and does not correspond with the actual election results.
+Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Berine")
+ABCpoliticalpollresults <- c(4, 62, 51, 21, 2, 14, 15)
+CBSpoliticalpollresults <- c(12, 75, 43, 19, 1, 21, 19) results = data.
+frame(Name,ABCpoliticalpollresults,CBSpoliticalpollresults) 
+Name ABC political pool results CBS political results 1 Jeb 4 12 2 Donald 62 75 3 Ted 51 43 4 Marco 21 19 5 Carly 2 1 6 Hillary 14 21 7 Berine 15 19
+Looking at the results, both ABC and CBS polls showed Donald as the leading candidate. However, CBS reported a higher support percentage (75%) compared to ABC (62%).
+Variation in Candidate Support: The ABC and CBS polls showed different support levels for each candidate.
+For example, Ted had more support in the ABC poll (51%) compared to the CBS poll (43%).
+Unusual Findings: Carly’s support was very low in both polls—only 2% in the ABC poll and 1% in the CBS poll. 
+This might mean that she was not very popular among the people surveyed.
+Influence of Sources: There are clear differences in the percentages reported by ABC and CBS. 
+For example, ABC shows more support for Ted, while CBS reports higher support for Donald.
+Possible Biases: The differences in results may be due to factors like the demographics of the respondents, the sampling methods used, or potential biases in each poll.
+Understanding these aspects is crucial when interpreting political polling data.
+Conclusion: Although the data in this analysis is entirely fictional, it highlights the importance of critically evaluating political poll results.
+Differences between polling sources show how complex and sometimes subjective measuring public opinion can be.
+To get a well-rounded view of political trends, people should be aware of possible biases and consider multiple sources. 
+Analyzing data plays a key role in shaping narratives and influencing public opinion in politics. 
+As we review these fictional poll results from ABC and CBS regarding the 2016 presidential election, it’s important to remember that, in reality, the accuracy of polling data remains a topic of ongoing discussion and scrutiny.
