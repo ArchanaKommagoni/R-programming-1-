@@ -1,0 +1,12 @@
+frequency = c(0.6,0.3,0.4,0.4,0.2,0.6,0.3,0.4,0.9,0.2)
+bloodpressure = c(103,87,32,42,59,109,78,205,135,176) 
+first = c(1,1,1,1,0,0,0,0,NA,1)
+second = c(0,0,1,1,0,0,1,1,1,1)
+final = c(0,1,0,1,0,1,0,1,1,1) 
+par (mfrow = c(1,3)) boxplot(frequency) boxplot(bloodpressure) boxplot(first, second, final) par (mfrow = c(1,3)) hist(frequency) hist(bloodpressure) hist(c(first, second, final))
+Explaination : The first boxplot shows how the "Frequency" values are spread out.The second boxplot represents the distribution of "Blood Pressure" levels.
+The third boxplot compares the ratings from the first doctor, the second doctor, and the final decision about patient care.
+Boxplots help us see the average values, range, and any unusual data points in the dataset.
+The first histogram displays how often each "Frequency" value appears.The second histogram shows the spread of "Blood Pressure" values.
+The third histogram combines and visualizes the distributions of the "First," "Second," and "Final Decision" ratings.
+Histograms help us understand how the data is grouped, if there are common trends, and whether any values stand out as unusual.
