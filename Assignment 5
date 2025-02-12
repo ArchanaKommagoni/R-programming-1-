@@ -1,0 +1,13 @@
+Define Matrices A and B = A <- matrix(1:100,nrow=10) B <- matrix(1:1000, nrow=10)
+Determine the inverse of matrix A = if(det_A <-det(A)) { A_inv <- solve(A) cat("inverse of matrix A:\n") print(A_inv)} else {cat("Matrix A is singular, its determinant is zero.\n")}
+Calculate the determinant of matrix B =
+if (is.square <- nrow(B) == ncol(B)) { det_B <- det(B) cat("\nDeterminant of matrix B:", det_B, "\n") } else { cat("Matrix B is not square, its determinant cannot be calculated.\n") }
+PROCEDURE:
+Defining Matrices: Start by creating matrices A and B using the provided values. The matrix() function in R can be utilized to construct them.
+Finding the Inverse of Matrix A: 
+Use R’s solve() function to calculate the inverse of matrix A. Before proceeding, ensure that the matrix is singular by checking that its determinant is not zero to avoid errors.
+Determining the Determinant of Matrix B:
+Since matrix B is not square, its determinant cannot be directly calculated.
+Therefore, it is essential to first verify whether B is a square matrix before attempting to determine its determinant.
+Displaying Results:
+Finally, present the determinant of B and the inverse of A, along with any relevant observations regarding the squareness or singularity of the matrices.
