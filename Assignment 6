@@ -1,0 +1,23 @@
+Finding A + B = AddingAB <-A + B
+Finding A - B = SubtractAB <-A - B
+Creating diagonal matrix with size 4 = diagMatrix <- diag(c(4,1,2,3))
+Creating the specicified genMatrix= 
+M <-matrix(0, nrow=5, ncol=5)
+M[upper.tri(M, diag = TRUE )] <- 1
+M[, 1] <- 2
+M[1, ] <- 1
+M[1 , 1] <-3
+diag(M) <-3
+Print Matrices=
+print("Matrix A:")
+print(A)
+print("Matrix B:")
+print(B)
+print("A+B:")
+print(AddingAB)
+print("A-B:")
+print(SubtractAB)
+print("Diagonal matrix:")
+print(diagMatrix)
+print("Generated matrix:")
+print(genMatrix)
