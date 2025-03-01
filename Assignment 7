@@ -1,0 +1,61 @@
+Q1.How do you tell what OO system (S3 vs. S4) an object is associated with? 
+1-Answer- These methods can be used to determine if an object is associated with S3 or S4: To check if an object is not an S4 object, use is.object(x) & !isS4(x). To identify the object type, use sloop::otype(x). If it returns "S3", the object is linked to S3. While base objects do not have a class attribute, S3 objects do.
+To check if an object is S3: Use is.object(x) & !isS4(x). If TRUE, it is likely an S3 object.
+To check the object type directly: Use sloop::otype(x). If it returns "S3", the object is part of the S3 system.
+
+
+Q2.How do you determine the base type (like integer or list) of an object?
+2-Answer- To determine an object's base type, we can use typeof(x). 
+Example: 
+y <- list(a = 1, b = "text")
+typeof(y)  # Returns base type as "list"
+
+
+Q3.What is a generic function?
+3-Answer-  A generic function provides a common interface for related functions, allowing methods to be executed based on the class of the input object. S3 generic functions are informal and use a special type of function to determine which method to invoke. In contrast, S4 generic functions support multiple dispatch and follow formal class definitions.
+
+
+Q4.What are the main differences between S3 and S4?
+4-Answer-
+S3: 
+1.Informal system.
+2. No formal class definitions.
+3. Methods belong to generic functions. 
+4.Objects can belong to multiple classes.
+
+S4:
+1.Formal system. 
+2.Has formal class definitions.
+3. Methods are explicitly defined. 
+4.Objects belong to a single class.
+
+
+Q5.Examples of S3 and S4: 
+5-Answer- Here are a few examples: 
+Example for S3:
+ # Create an S3 object
+s <- list(name = "Archana", age = 23, GPA = 3.85)
+class(s) <- "student"  # Assigning the S3 class "student" to the list
+
+# Display the object
+print(s)
+
+# Check the class
+class(s)  # Returns "student"
+
+Example for S4:
+# Create an S4 class definition
+setClass("student", slots = c(name = "character", age = "numeric", GPA = "numeric"))
+
+# Create an S4 object
+s4 <- new("student", name = "Archana", age = 23, GPA = 3.85)
+
+# Display the S4 object
+s4
+
+# Check the class
+class(s4)  # Returns "student"
+
+
+
+
