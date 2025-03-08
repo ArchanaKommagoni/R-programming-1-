@@ -1,0 +1,48 @@
+# Installing required packages
+install.packages("plyr")
+install.packages("data.table")
+
+# Loading packages
+library(data.table)
+library(plyr)
+
+# Importing dataset
+student_data <- read.table("C:/Users/Komma/Downloads/Assignment 6 Dataset.txt",header = TRUE, sep = ",")
+print(student_data) #  printing to check data  
+
+# Calculating mean using Sex as the category
+gender_grade_average <- ddply(student_data, "Sex", summarise, Grade.Average = mean(Grade))
+print(gender_grade_average) #printing gender grade avearage 
+
+# Writing output to a text file named gradeaverage 
+write.table(gender_grade_average, "gradeaverage.txt", sep = ",", row.names = FALSE)
+
+# Creating a new dataset which contains the letter "i" in the student names by filtering the original dataset 
+# The original dataset (student_data) is filtered using the subset() method to only include rows where the letter 'i' appears in the 'Name' column. An whole new data frame called studentnames_i contains this portion.
+studentnames_i <- subset(student_data, grepl("i", student_data$Name, ignore.case = TRUE))
+print(studentnames_i) #printing the dataset
+
+
+# Writing studentnames_i dataset to a CSV file with header name "studentnames"
+write.csv(data.frame(student_names = studentnames_i$Name), "students_names_i.csv", row.names = FALSE)
+
+# Writing the filtered dataset to a CSV file using file.choose() and subset()
+write.csv(i_students, "Datasubset.csv",sep = ",")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
