@@ -1,0 +1,33 @@
+#Loading IRIS dataset
+dataframe <- read.csv("C://Users//Komma//Downloads//iris.csv")
+
+#Printing dataset
+print(dataframe)
+
+#Basic scatter plot without usage of any package 
+#Sepal Width is plotted on the y-axis and Sepal Length on the x-axis. "Sepal Length vs. Sepal Width" is the plot's primary title, and the labels for the x and y axes are "Sepal Length" and "Sepal Width," respectively.
+plot(iris$Sepal.Length, iris$Sepal.Width, xlab = "Sepal Length", ylab = "Sepal Width", main = "Sepal Length vs Sepal Width")
+
+#Load lattice package
+library(lattice)
+
+#Scatter plot using lattice package 
+#Sepal Width is plotted on the x-axis and Sepal Length on the y-axis (notice the axes are reversed from the first plot). The plot's primary title is "Sepal Length vs. Sepal Width," and the labels for the x and y axes are "Sepal Width and Sepal Length," respectively.
+xyplot(iris$Sepal.Length ~ iris$Sepal.Width, xlab = "Sepal Width", ylab = "Sepal Length", main = "Sepal Length vs Sepal Width")
+
+#Loading ggplot2 package
+install.packages("ggplot2")
+library(ggplot2)
+
+#Scatter plot using ggplot2 package
+#The ggplot() function from the ggplot2 package is used to construct the third plot. With dots colored by species, it plots sepal length on the x-axis and sepal width on the y-axis. "Sepal Length vs. Sepal Width with Species" is the plot's primary title, while the labels for the x and y axes are "Sepal Length" and "Sepal Width" respectively. Furthermore, theme_minimal() is used to set the theme to "minimal".
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + geom_point() + labs(x = "Sepal Length", y = "Sepal Width", title = "Sepal Length vs Sepal Width with Species") + theme_minimal()
+
+
+
+
+
+
+
+
+
