@@ -1,3 +1,38 @@
+This data shows the Effect of Vitamin C Dosage and Supplement Type on Tooth Length.
+
+Here in the markdown file, I added the R code chunks and also I tried to add Emphasis and Headers.
+
+I added following R code chunks using ```{r}..............``` :
+
+```{r}
+
+data("Toothgrowth")
+
+list(Toothgrowth)
+
+``` 
+
+```{r, echo=FALSE}
+
+plot(Toothgrowth)
+
+```
+
+
+
+I added following Emphasis and Headers using **...** and ### respectively :
+
+### **Plot for Effect of Vitamin C Dosage and Supplement Type on Tooth Length*
+
+**...** gives me bold text and ### gives me header 3.
+
+
+
+Then, I saved this markdown file by "Assignment 12.rmd".
+
+
+
+
 Assignment 12
 title: "Toothgrowth dataset" output:html_document date: "2025-04-12"
 
