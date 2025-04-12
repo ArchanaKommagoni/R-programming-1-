@@ -1,0 +1,17 @@
+Assignment 12
+title: "Toothgrowth dataset" output:html_document date: "2025-04-12"
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+data("ToothGrowth")
+list(ToothGrowth)
+```
+
+plot for Determination of Effect of Vitamin C Dosage and Supplement Type on Tooth Length
+
+```{r, echo=FALSE}
+plot(ToothGrowth)
+```
